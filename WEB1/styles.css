@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E0E0E0; /* Fallback color */
+    background-image: url('images/backgro.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+input[type="text"] {
+    padding: 5px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo-image {
+    height: 150px; /* Set to desired height */
+    width: auto;   /* Maintain aspect ratio */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Header Right Section */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+/* Login Button */
+.btn-login {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+}
+
+.btn-login:hover {
+    background-color: #e29191;
+}
+.btn-sign-up {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+}
+
+.btn-sign-up:hover {
+    background-color: #e29191;
+}
+.banner {
+    background-image: url('banner-image.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    color: rgb(255, 255, 255); /* Text color */
+    padding: 50px 20px; /* Top/bottom and left/right padding */
+    text-align: center; /* Center the text */
+}
+
+.banner-content {
+    background-color: rgba(231, 0, 0, 0.993); /* Semi-transparent background */
+    padding: 10px; /* Padding around text */
+    border-radius: 10px; /* Rounded corners */
+}
+@media (max-width: 768px) {
+    .banner {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+}q
+/* Hero Section */
+
+.hero button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero-buttons {
+    display: flex;                /* Use flexbox to align buttons */
+    justify-content: right;      /* Center align the buttons */
+    gap: 20px;                   /* Space between buttons */
+    margin-top: 20px;            /* Add some space above the buttons */
+}
+
+.shop-now {
+    background-color: #f44336;   /* Example background color */
+    color: white;                 /* Text color */
+    border: none;                 /* No border */
+    padding: 10px 20px;          /* Padding for button */
+    border-radius: 5px;          /* Rounded corners */
+    cursor: pointer;              /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.shop-now:hover {
+    background-color: #d6cfcf;   /* Darker color on hover */
+}
+/* Product Button */
+.btn {
+    padding: 10px 15px; /* Standardize padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+.btn-shop-now {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-shop-now:hover {
+    background-color: #ee9a99;
+}
+
+.btn-add-to-cart {
+    background-color: #FDD835;
+    color: #333333;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #ee9a99;
+}
+/* Categories, Promotions, and Testimonials */
+.categories, .promotions, .testimonials {
+    padding: 20px;
+}
+
+/* Category Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+}
+
+/* Individual Category */
+.category {
+    background-color: #797777;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 40px; /* Optional: adds rounded corners */
+}
+
+/* Category Image */
+.category-image {
+    width: auto;          /* Makes the image full width */
+    height: 100%;         /* Maintains aspect ratio */
+    max-height: 250px;    /* Adjust as needed */
+    object-fit: cover;    /* Ensures the image covers the area without distortion */
+}
+.category {
+    transition: transform 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.2); /* Slightly enlarges the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+/* Promotion Carousel */
+.promotion-carousel {
+    background-color: #eaeaea;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: 1fr; /* Stack categories on smaller screens */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #747171; /* Dark background */
+    color: white; /* Light text */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links, .social-media {
+    margin: 10px 0;
+}
+
+.footer-links, .social-media, .newsletter {
+    margin: 10px 0;
+}
+
+/* Newsletter */
+.newsletter input {
+    padding: 5px;
+}
